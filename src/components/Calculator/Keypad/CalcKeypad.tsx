@@ -27,7 +27,7 @@ const CalcKeypad = () => {
 	return (
 		<div className={classes.calc__keypad}>
 			{keys.map((key) => (
-				<CalcKey value={key} />
+				<CalcKey value={key} key={key} />
 			))}
 		</div>
 	);

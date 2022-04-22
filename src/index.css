@@ -11,6 +11,9 @@
 	--key-shadow-3: hsl(28, 16%, 65%);
 	--text-color-1: hsl(0, 0%, 100%);
 	--text-color-2: hsl(221, 14%, 31%);
+	--key-text-1: hsl(221, 14%, 31%);
+	--key-text-2: hsl(0, 0%, 100%);
+	--key-text-3: hsl(0, 0%, 100%);
 }
 
 * {

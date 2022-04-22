@@ -5,9 +5,9 @@
 	padding-top: 0.3rem;
 	cursor: pointer;
 	position: relative;
-	font-size: 1.8rem;
+	font-size: 1.85rem;
 	font-weight: 700;
-	color: var(--text-color-2);
+	color: var(--key-text-1);
 	background-color: var(--key-background-3);
 	box-shadow: 0px 3.2px 0px 0px var(--key-shadow-3);
 }
@@ -16,25 +16,25 @@
 	box-shadow: none;
 }
 .del-key {
-	font-size: 1.4rem;
-	font-weight: 600;
-	color: var(--text-color-1);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--key-text-2);
 	background-color: var(--key-background-1);
 	box-shadow: 0px 3.2px 0px 0px var(--key-shadow-1);
 }
 .reset-key {
-	font-size: 1.4rem;
-	font-weight: 600;
-	color: var(--text-color-1);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--key-text-2);
 	background-color: var(--key-background-1);
 	box-shadow: 0px 3.2px 0px 0px var(--key-shadow-1);
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
 .equal-key {
-	font-size: 1.4rem;
-	font-weight: 600;
-	color: var(--text-color-1);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--key-text-3);
 	background-color: var(--key-background-2);
 	box-shadow: 0px 3.2px 0px 0px var(--key-shadow-2);
 	grid-column-start: 3;
