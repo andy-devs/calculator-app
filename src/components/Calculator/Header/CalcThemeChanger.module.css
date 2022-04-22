@@ -31,10 +31,7 @@
 	color: var(--key-background-2);
 	background-color: var(--key-background-2);
 }
-.theme__slider-dragging {
-}
-.theme__slider-mark-wrapper {
-}
+
 .theme__slider-mark {
 	display: none;
 }

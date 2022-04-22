@@ -18,11 +18,7 @@ const CalcThemeChanger = () => {
 					track: classes['theme__slider-track'],
 					bar: classes['theme__slider-bar'],
 					thumb: classes['theme__slider-thumb'],
-					// dragging: 'your-dragging-class',
-					label: classes['theme__slider-dragging'],
-					markWrapper: classes['theme__slider-mark-wrapper'],
 					mark: classes['theme__slider-mark'],
-					// markFilled: 'your-markFilled-class',
 					markLabel: classes['theme__slider-mark-label'],
 				}}
 				showLabelOnHover={false}

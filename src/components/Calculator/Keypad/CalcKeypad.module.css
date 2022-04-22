@@ -1,0 +1,4 @@
+.calc__keypad {
+	background-color: var(--keypad-background);
+	padding: 1.5rem;
+}
