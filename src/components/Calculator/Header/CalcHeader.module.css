@@ -1,0 +1,10 @@
+.calc__header {
+	color: var(--text-color-1);
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 100%;
+}
+.calc__header-title {
+	font-weight: 600;
+}

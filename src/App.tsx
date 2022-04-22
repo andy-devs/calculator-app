@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import Calculator from './components/Calculator/Calculator';
 
 function App() {
-	const [value, setValue] = useState('');
-
-	return <main className='main'></main>;
+	return (
+		<main className='main'>
+			<Calculator />
+		</main>
+	);
 }
 
 export default App;

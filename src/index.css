@@ -9,7 +9,7 @@
 	--key-shadow-2: hsl(6, 70%, 34%);
 	--key-background-3: hsl(30, 25%, 89%);
 	--key-shadow-3: hsl(28, 16%, 65%);
-	--text-color-1: hsl(0, 0, 100%);
+	--text-color-1: hsl(0, 0%, 100%);
 	--text-color-2: hsl(221, 14%, 31%);
 }
 
@@ -24,15 +24,13 @@ html {
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	font-family: 'League Spartan', sans-serif;
 	background-color: var(--main-background);
 }
+
 .main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
