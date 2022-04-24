@@ -7,4 +7,5 @@
 	text-align: right;
 	font-weight: 600;
 	margin-bottom: 1rem;
+	overflow-x: hidden;
 }

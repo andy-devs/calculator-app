@@ -14,6 +14,8 @@ const CalcKey = ({ value }: Props) => {
 	const clickHandler = (event: any) => {
 		if (nums.includes(value)) {
 			calcCtx.addScreen(value);
+		} else if (value === '.') {
+			calcCtx.addScreen(value);
 		} else if (value === 'DEL') {
 			calcCtx.delete();
 		} else if (value === 'RESET') {

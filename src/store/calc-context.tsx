@@ -28,13 +28,22 @@ const CalcProvider = ({ children }: { children: React.ReactNode }) => {
 		setScreen(num);
 	};
 	const addScreenHandler = (num: string) => {
-		if (screen === '0') {
-			setScreen((prev) => num);
+		if (screen.length >= 14) {
+			alert('Input is too big');
+			return;
+		}
+		if (screen === '0' && num !== '.') {
+			setScreen(num);
+		} else if (num === '.' && screen.includes('.')) {
+			return;
 		} else {
 			setScreen((prev) => prev.concat(num));
 		}
 	};
 	const setPrevValueHandler = (num: string) => {
+		if (screen === '0' && operation !== '') {
+			return;
+		}
 		setPrevValue(num);
 	};
 	const setOperationHandler = (operation: string) => {
@@ -44,6 +53,8 @@ const CalcProvider = ({ children }: { children: React.ReactNode }) => {
 		if (screen === '0') {
 			return;
 		} else if (screen.length === 1) {
+			setScreen('0');
+		} else if (screen[0] === '-' && screen.length === 2) {
 			setScreen('0');
 		} else {
 			setScreen((prev) => prev.slice(0, -1));
@@ -62,10 +73,30 @@ const CalcProvider = ({ children }: { children: React.ReactNode }) => {
 			result = +prevValue * +screen;
 		} else if (operation === '/') {
 			result = +prevValue / +screen;
+		} else if (operation === '') {
+			return;
+		}
+		if (!Number.isInteger(result)) {
+			if (result.toFixed(4).length >= 15) {
+				alert('Result is too big');
+				return;
+			}
+		} else {
+			if (result.toString().length >= 15) {
+				alert('Result is too big');
+				return;
+			}
 		}
 		setPrevValue(screen);
-		setScreen(result.toString());
 		setOperation('');
+		if (result === Infinity || result === -Infinity || Number.isNaN(result)) {
+			result = 0;
+		}
+		if (!Number.isInteger(result)) {
+			setScreen(result.toFixed(4));
+		} else {
+			setScreen(result.toString());
+		}
 	};
 
 	const contextValue = {
