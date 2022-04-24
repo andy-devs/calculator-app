@@ -9,3 +9,9 @@
 	margin-bottom: 1rem;
 	overflow-x: hidden;
 }
+@media (max-width: 500px) {
+	.calc__screen {
+		font-size: 2.2rem;
+		padding: 1.6rem 0.7rem;
+	}
+}
