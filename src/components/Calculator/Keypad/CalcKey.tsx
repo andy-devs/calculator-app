@@ -25,6 +25,9 @@ const CalcKey = ({ value }: Props) => {
 			calcCtx.setOperation('+');
 			calcCtx.reset();
 		} else if (value === '-') {
+			if (calcCtx.screen === '0') {
+				calcCtx.setScreen('-');
+			}
 			calcCtx.setPrevValue(calcCtx.screen);
 			calcCtx.setOperation('-');
 			calcCtx.reset();
