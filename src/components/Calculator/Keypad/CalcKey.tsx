@@ -11,7 +11,7 @@ const CalcKey = ({ value }: Props) => {
 
 	const nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 
-	const clickHandler = (event: any) => {
+	const clickHandler = () => {
 		if (nums.includes(value)) {
 			calcCtx.addScreen(value);
 		} else if (value === '.') {
