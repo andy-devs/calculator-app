@@ -77,7 +77,7 @@ const CalcProvider = ({ children }: { children: React.ReactNode }) => {
 			return;
 		}
 		if (!Number.isInteger(result)) {
-			if (result.toFixed(4).length >= 15) {
+			if (result.toFixed(2).length >= 15) {
 				alert('Result is too big');
 				return;
 			}
@@ -93,7 +93,7 @@ const CalcProvider = ({ children }: { children: React.ReactNode }) => {
 			result = 0;
 		}
 		if (!Number.isInteger(result)) {
-			setScreen(result.toFixed(4));
+			setScreen(result.toFixed(2));
 		} else {
 			setScreen(result.toString());
 		}
